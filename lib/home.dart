@@ -20,7 +20,7 @@ class Home extends StatelessWidget {
 
             Consumer<WeightProvider>(
               builder: (context, weightProvider, _) => Slider(
-                min: 0,
+                min: 1,
                 max: 100,
                 divisions: 100,
                 label: weightProvider.weight.round().toString(),
@@ -46,7 +46,7 @@ class Home extends StatelessWidget {
 
             Consumer<HeightProvider>(
               builder: (context, heightProvider, _) => Slider(
-                min: 0,
+                min: 1,
                 max: 200,
                 divisions: 200,
                 label: heightProvider.height.round().toString(), 
